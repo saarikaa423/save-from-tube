@@ -13,13 +13,13 @@ def load_lottiefile(filepath: str):
 lottie_coding = load_lottiefile("musician.json")
 
 st.set_page_config(
-    page_title="WebSave - YouTube",
+    page_title="Save From Tube",
     page_icon=Image.open("downloading.png"),
     layout="wide"
 )
 
 # Set the Streamlit app title
-st.title("WebSave - Download YouTube Videos & Audios")
+st.title("Save From Tube - Download YouTube Videos & Audios")
 
 st.markdown(
     f"""
@@ -124,4 +124,4 @@ with c2:
     st.markdown("**Thank you for using WebSave!**")
 
 # Add a footer
-st.markdown("Made with ❤️ by Shubham Gupta")
+st.markdown("Made with ❤️ by Saarikaa Pudducheri")
