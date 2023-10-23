@@ -3,14 +3,6 @@ from pytube import YouTube
 from PIL import Image
 import requests
 from io import BytesIO
-import json
-from streamlit_lottie import st_lottie
-
-def load_lottiefile(filepath: str):
-    with open(filepath, "r") as f:
-        return json.load(f)
-        
-lottie_coding = load_lottiefile("musician.json")
 
 st.set_page_config(
     page_title="Save From Tube",
@@ -103,25 +95,6 @@ if url:
                     st.markdown(f'<a href="{download_url}" download>Click to Download</a>', unsafe_allow_html=True)
                 else:
                     st.warning("No audio stream available for the selected quality.")
-c1, c2 = st.columns([1, 1])
-with c1:
-    st_lottie(
-            lottie_coding,
-            speed=0.4,
-            reverse=False,
-            loop=True,
-            quality="medium",
-            height=200,
-            width=200,
-            key=None,
-            )
-with c2:
-    st.markdown(" ")
-    st.markdown(" ")
-    st.markdown(" ")
-    st.markdown(" ")
-    st.markdown(" ")
-    st.markdown("**Thank you for using WebSave!**")
 
 # Add a footer
 st.markdown("Made with ❤️ by Saarikaa Pudducheri")
