@@ -17,8 +17,9 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background: url("https://unsplash.com/photos/hgO1wFPXl3I/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8OHx8bXVzaWN8ZW58MHx8fHwxNjk3OTM4ODg3fDA&force=true");
+        background: url("https://unsplash.com/photos/nd7Br7M_KJk/download?ixid=M3wxMjA3fDB8MXxzZWFyY2h8NHx8dGhlJTIwd2Vla25kfGVufDB8fHx8MTY5ODA3NDg1Nnww&force=true");
         background-size: cover;
+        background-position: center;
     }}
     
     .thumbnail-container {{
